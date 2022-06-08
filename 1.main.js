@@ -1,4 +1,4 @@
-'use stirct'
+'use strict'
 //Contenedores 
 var variable1 = 75; // Contenedor global
 let variable2 = 12.5; // Contenedor local

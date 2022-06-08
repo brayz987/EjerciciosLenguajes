@@ -12,12 +12,12 @@ for ( let i=0 ; i < productsNumber ; i++){
         "Precio": prompt("Precio sin IVA " + (i+1) + ": "),
         "Cantidad": prompt("Cantidad comprada: ")
     });
-    prices[i]["Iva"] = prices[i]["Precio"]*19/100;
+    prices[i].Iva = prices[i].Precio*19/100;
 }
 
 for ( let i = 0; i < prices.length; i++){ 
-    totalwithoutIva += prices[i]["Precio"]*prices[i]["Cantidad"];
-    totalIva += prices[i]["Iva"]*prices[i]["Cantidad"];
+    totalwithoutIva += prices[i].Precio*prices[i].Cantidad;
+    totalIva += prices[i].Iva*prices[i].Cantidad;
 }
 
 console.log(prices)
